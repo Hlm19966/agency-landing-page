@@ -40,6 +40,16 @@ The designs were created to the following widths:
 - Family: [Fraunces](https://fonts.google.com/specimen/Fraunces)
 - Weights: 700, 900
 
+
+.barlow-thin {
+  font-family: "Barlow", serif;
+  font-family: "Fraunces", serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+
+
 ## Icons
 
 We provide the required social icons. But, if you prefer, you can use a font icon library. Some suggestions can be found below:
