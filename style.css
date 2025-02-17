@@ -105,12 +105,15 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: center; 
-    gap: 40px;
+    gap: 2.5rem;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
 }
 
 .mobile-menu.active {
     opacity: 1;
     visibility: visible;
+    transform: translateX(0);
 }
 
 li a {
@@ -118,14 +121,14 @@ li a {
     text-decoration: none;
     color: var(--Very-dark-grayish-blue); 
     font-family: "Barlow", serif;
-    font-size: 0.975rem;
+    font-size: 0.985rem;
     font-weight: 500;
     z-index: 2;
     padding: 10px 20px;
 }
 
 li a:hover {
-    color: black;
+    color: var(--Very-dark-grayish-blue);
     font-weight: 600;
     text-transform: uppercase;
 }
@@ -141,6 +144,7 @@ li a::after {
     top: 0;
     left: 0;
     opacity: 0;
+    z-index: -1;
     padding: inherit;
 }
 
@@ -149,14 +153,13 @@ li a:hover::after {
     transform: scale3d(1.2)
 }
 
-
 ul {
     display: flex;
     list-style: none;
     flex-direction: column;
     align-items: center;
     padding: 0;
-    gap: 20px;
+    gap: 1.25rem;
 }
 
 
@@ -433,11 +436,11 @@ footer {
     }
 
     ul {
-    display: flex;
-    padding: 20px;
-    flex-direction: row;
-    gap: initial; 
-    }
+        display: flex;
+        padding: 20px;
+        flex-direction: row;
+        gap: initial; 
+        }
 
     .mobile-menu {
       position: static;
@@ -457,43 +460,15 @@ footer {
     }
 
     
-li a {
-    position: relative;
-    text-decoration: none;
+    li a {
     color: var(--White);
-    font-family: "Barlow", serif;
     font-size: 0.975rem;
-    font-weight: 500;
-    z-index: 2;
-   
-}
+    }
 
-li a:hover {
-    color: black;
-    font-weight: 600;
-    text-transform: uppercase;
-}
 
-li a::after {
-    content: "";
-    position: absolute;
-    border-radius: 55px;
+    li a::after {
     background-color: var(--White);
-    transition: all 0.3s;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    opacity: 0;
-    padding: inherit;
-}
-
-li a:hover::after {
-    opacity: 1;
-    transform: scale3d(1.2)
-}
-  
+    }
 
     h1 {
         font-size: 3rem;
