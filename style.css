@@ -306,7 +306,7 @@ h5 {
 /*section one*/
 
 .section-one {
-    padding: 2.125rem 2.450rem;
+    padding: 2.125rem 2.100rem;
 }
 
 .highlight-text {
@@ -426,7 +426,6 @@ footer {
         width: 100%;
     }
     /*end of the body & container*/
-
 
     /*header*/
 
@@ -598,4 +597,11 @@ footer {
     }
     /*end of the footer*/
 
+}
+
+@media (min-width:768px) and (max-width:1024px) {
+    .container {
+        max-width: 77.5rem;
+        width: 90%;
+    }
 }
