@@ -537,6 +537,7 @@ footer {
     }
 
     .text-description, .caption-text {
+
         padding: 0 7rem;
     }
 
@@ -597,11 +598,4 @@ footer {
     }
     /*end of the footer*/
 
-}
-
-@media (min-width:768px) and (max-width:1024px) {
-    .container {
-        max-width: 77.5rem;
-        width: 90%;
-    }
 }
